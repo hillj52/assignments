@@ -5,7 +5,7 @@ import java.util.Random;
 public class Day2 {
 
 	public static void main(String[] args) {
-		DiceGame dg = new DiceGame(6,2);
+		DiceGame dg = new DiceGame(6,2,7);
 		int[] score = new int[2]; //score[0] = score of game, score[1] = number of rolls
 		int highScore = 0;
 		int lowScore = 1000;
@@ -41,34 +41,34 @@ public class Day2 {
 class DiceGame {
 	private Dice dice;
 	private int numDice;
+	private int endCond;
 	
-	public DiceGame(int numSides, int numDice) {
+	//endCond is the sum of all dice which cause the game to end
+	public DiceGame(int numSides, int numDice, int endCond) {
 		this.numDice = numDice;
 		dice = new Dice(numSides);
+		this.endCond = endCond;
 	}
 	
 	public int[] playGame() {
 		int[] score = new int[2];
 		score[0] = 0; //Running score of the dice
 		score[1] = 1; //Running roll count of the dice
-		if (numDice == 1) {
-			int roll = dice.roll();
-			while (roll != 1) {
-				score[0] += roll;
-				roll = dice.roll();
-				score[1]++;
-			}
-		} else {
-			int roll1 = dice.roll();
-			int roll2 = dice.roll();
-			while ((roll1+roll2) != 7) {
-				score[0] = score[0] + roll1 + roll2;
-				roll1 = dice.roll();
-				roll2 = dice.roll();
-				score[1]++;
-			}
+		int roll = rollAll();
+		while (roll != endCond) {
+			score[0] += roll;
+			roll = rollAll();
+			score[1]++;
 		}
 		return score;
+	}
+	
+	private int rollAll() {
+		int sum = 0;
+		for (int i = 0; i < numDice; i++) {
+			sum += dice.roll();
+		}
+		return sum;
 	}
 }
 
