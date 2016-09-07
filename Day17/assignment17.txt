@@ -1,0 +1,55 @@
++------------------+--------+---------------------------------------------------+----------------+---------------+------------------+
+| subject          | number | Class Description                                 | Ins First Name | Ins Last Name | Major            |
++------------------+--------+---------------------------------------------------+----------------+---------------+------------------+
+| English          |    101 | Intro to Motivational Speaking                    | Ray            | Lewis         | General Business |
+| English          |    102 | Intermediate Motivational Speaking                | Ray            | Lewis         | General Business |
+| English          |    103 | Advanced Motivational Speaking                    | Ray            | Lewis         | General Business |
+| English          |    201 | Intro to Reading an Offense                       | Ray            | Lewis         | General Business |
+| English          |    202 | Intermediate Reading an Offense                   | Ray            | Lewis         | General Business |
+| English          |    203 | Advanced Reading an Offense                       | Ray            | Lewis         | General Business |
+| English          |    301 | Press Conference Basics                           | Ray            | Lewis         | General Business |
+| English          |    302 | How to be an ESPN Analyst I                       | Ray            | Lewis         | General Business |
+| English          |    303 | How to be an ESPN analyst II                      | Ray            | Lewis         | General Business |
+| Computer Science |    311 | How to Program an Interception Machine            | Ed             | Reed          | Accounting       |
+| Computer Science |    312 | Programing a team to win                          | Ed             | Reed          | Accounting       |
+| Computer Science |    313 | How The Bengals Programing went Haywire           | Ed             | Reed          | Accounting       |
+| Computer Science |    441 | Intro to Defensive Programing                     | Ed             | Reed          | Accounting       |
+| Computer Science |    442 | Intermediate Defensive Programing                 | Ed             | Reed          | Accounting       |
+| Computer Science |    443 | Advanced Defensive Programing                     | Ed             | Reed          | Accounting       |
+| Education        |    221 | Basic Financial Education for the Salary Cap      | Terrel         | Suggs         | Finance          |
+| Education        |    222 | How to Rush the QB                                | Terrel         | Suggs         | Finance          |
+| Education        |    223 | How not to Helmet to Helmet a WR                  | Terrel         | Suggs         | Finance          |
+| Education        |    351 | How to Throw to Your Own Team                     | Joe            | Flacco        | Finance          |
+| Education        |    352 | Disecting a Defense                               | Joe            | Flacco        | Finance          |
+| Education        |    353 | How to be Elite                                   | Joe            | Flacco        | Finance          |
+| Math             |    201 | The Math Behind Pass Blocking                     | Jonathan       | Ogden         | Math             |
+| Math             |    202 | The Math Behind Run Blocking                      | Jonathan       | Ogden         | Math             |
+| Math             |    203 | How to use Angles to Block                        | Jonathan       | Ogden         | Math             |
+| Math             |    204 | Advanced Math for Better Football                 | Jonathan       | Ogden         | Math             |
+| Math             |    301 | Calculating Pass Trajectory                       | Ed             | Reed          | Math             |
+| Math             |    302 | The Physics of Interceptions                      | Ed             | Reed          | Math             |
+| Math             |    303 | Interception Return Dynamics                      | Ed             | Reed          | Math             |
+| Math             |    304 | Advanced Int Return Dynamics                      | Ed             | Reed          | Math             |
+| Computer Science |    311 | How to Program an Interception Machine            | Ed             | Reed          | Engineering      |
+| Computer Science |    312 | Programing a team to win                          | Ed             | Reed          | Engineering      |
+| Computer Science |    313 | How The Bengals Programing went Haywire           | Ed             | Reed          | Engineering      |
+| Math             |    201 | The Math Behind Pass Blocking                     | Jonathan       | Ogden         | Engineering      |
+| Math             |    202 | The Math Behind Run Blocking                      | Jonathan       | Ogden         | Engineering      |
+| Math             |    203 | How to use Angles to Block                        | Jonathan       | Ogden         | Engineering      |
+| Education        |    221 | Basic Financial Education for the Salary Cap      | Terrel         | Suggs         | Education        |
+| Education        |    222 | How to Rush the QB                                | Terrel         | Suggs         | Education        |
+| Education        |    223 | How not to Helmet to Helmet a WR                  | Terrel         | Suggs         | Education        |
+| Education        |    351 | How to Throw to Your Own Team                     | Joe            | Flacco        | Education        |
+| Education        |    352 | Disecting a Defense                               | Joe            | Flacco        | Education        |
+| Education        |    353 | How to be Elite                                   | Joe            | Flacco        | Education        |
+| English          |    101 | Intro to Motivational Speaking                    | Ray            | Lewis         | Education        |
+| English          |    102 | Intermediate Motivational Speaking                | Ray            | Lewis         | Education        |
+| English          |    103 | Advanced Motivational Speaking                    | Ray            | Lewis         | Education        |
+| History          |    101 | History of the AFC North, Why the Ravens Dominate | John           | Harbaugh      | General Studies  |
+| History          |    102 | 2001-How the Best Defense of All Time Was Born    | John           | Harbaugh      | General Studies  |
+| History          |    103 | Playoff History, Why Can't The Bengals Win?       | John           | Harbaugh      | General Studies  |
+| Psychology       |    101 | The Psychology of the Salary Cap                  | Peter          | Boulware      | General Studies  |
+| Psychology       |    102 | How Not to Pay Andy Dalton 100Mil                 | Peter          | Boulware      | General Studies  |
+| Psychology       |    231 | How Marvin Lewis Got Overhyped After Baltimore    | Ed             | Reed          | General Studies  |
++------------------+--------+---------------------------------------------------+----------------+---------------+------------------+
+50 rows in set (0.02 sec)
