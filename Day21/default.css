@@ -1,0 +1,35 @@
+div {
+	width:49%;
+	display: inline-block;
+	text-align: center;
+}
+img {
+	width:100px;
+}
+table, td, th{
+	border:2px solid grey;
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+tr {
+	height:100px;
+}
+#rightDiv {
+	background-color:#551a8b;
+}
+#leftDiv {
+	background-color:#9f00c5;
+}
+#footerName {
+	color:#551a8b;
+}
+.name {
+	font-weight:bold;
+}
+.supervisor {
+	color:red;
+}
+.startDate {
+	font-style:italic;
+}
