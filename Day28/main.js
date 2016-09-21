@@ -6,12 +6,24 @@ $(document).ready(function() {
 	var res = $("#reset");
 	var delta = $("#delta");
 	var zeroMsg = $("#zero_message");
+	var byOne = $("#by_one");
+	var byRandom = $("#by_random");
+	var byUser = $("#by_user");
+	var useDelta = false;
+	var prevDelta = 1;
 	
 	function randomDelta() {
-		return Math.floor(Math.random() * 21) - 10;
+		prevDelta = delta.val();
+		if (useDelta) {
+			return Math.floor(Math.random() * 21) - 10;
+		} else {
+			return prevDelta;
+		}
 	}
 	
 	delta.val(randomDelta());
+	$("#increment_control").hide();
+	
 	
 	function toggleItalic() {
 		if ((number % 2) === 0) {
@@ -77,5 +89,31 @@ $(document).ready(function() {
 		number = 0;
 		numBox.val(number).removeClass("text-danger").addClass("italic");
 		zeroMsg.show();
+	});
+	
+	byOne.click(function() {
+		byOne.addClass("active");
+		byRandom.removeClass("active");
+		byUser.removeClass("active");
+		useDelta = false;
+		$("#increment_control").hide();
+		delta.val(1);
+	});
+	
+	byRandom.click(function() {
+		byOne.removeClass("active");
+		byRandom.addClass("active");
+		byUser.removeClass("active");
+		useDelta = true;
+		delta.val(randomDelta());
+		$("#increment_control").show();
+	});
+	
+	byUser.click(function() {
+		byOne.removeClass("active");
+		byRandom.removeClass("active");
+		byUser.addClass("active");
+		useDelta = false;
+		$("#increment_control").show();
 	});
 });

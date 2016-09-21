@@ -9,6 +9,18 @@
 		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">SSA Counter - Increment Options: </a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a id="by_one" class="active" href="#">By One</a></li>
+					<li><a id="by_random" href="#">By Random</a></li>
+					<li><a id="by_user" href="#">By User</a></li> 
+				</ul>
+			</div>
+		</nav>
 		<div id="number-div" class="conainer-fluid text-center">
 			<p>Number:
 			<input id="number" type="text" class="italic"></input>
@@ -23,7 +35,7 @@
 		</div>
 		<div id="increment_control" class="text-center container-fluid">
 			<p>Increment Amount:
-			<input id="delta" type="text" value="0"></input>
+			<input id="delta" type="text" value="1"></input>
 			</p>
 		</div>
 		<div id="zero_message" class="text-center container-fluid">
