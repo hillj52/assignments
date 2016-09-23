@@ -1,0 +1,30 @@
+.home-div, #msg-div {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#user-div {
+	width: 100%;
+	display: inline-block;
+}
+
+#chan-list, #msg-list {
+	list-style:none;
+}
+
+#msg-box {
+	height:100px;
+	width:100%;
+	vertical-align: top;
+}
+
+#token-div {
+	width: 100%;
+	text-align: center;
+}
+
+.wrapper {
+	width:100%;
+	display: inline-block;
+}

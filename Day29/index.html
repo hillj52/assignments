@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slack API</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="getSlackToken.js"></script>
+	</head>
+	<body>
+		<nav id="navbar" class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">SSA Slack API Tester: </a>
+				<ul class="nav navbar-nav">
+					<li><a id="nav-home" href="#">Home</a></li>
+					<li><a id="nav-info" href="#user">Edit User Info</a></li>
+					<li><a id="nav-toggle" href="#toggle">Show/Hide Private</a></li> 
+				</ul>
+				</div>
+				<ul class="nav navbar-nav">
+				</ul>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div id="chan-div" class="home-div">
+				<div id="public-channels">
+					<ul id="pub-chan-list">
+						<li><h3>Public Channels</h3></li>
+					</ul>
+				</div>
+				<div>
+					<ul id="pri-chan-list">
+						<li><h3>Private Channels</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="msg-div" class="home-div">
+				<ul id="msg-list">
+					<li><h3>Post Message</h3></li>
+					<li><textarea type="text" id="msg-box" placeholder="Message to Send"></textarea></li>
+					<li><button id="send-msg">Send</button>
+					<button id="clear-msg">Clear</button></li>
+				</ul>
+			</div>
+		</div>
+		<div id="user-div">
+			<table>
+				<tr><td>Post as Bot: </td><td><input type="checkbox" id="as-bot" name="bot-box" checked></input></td></tr>
+				<tr><td>Name: </td><td><input type="text" id="bot-name" placeholder="Bot name"></input></td></tr>
+				<tr><td>Pic:  </td><td><input type="text" id="bot-pic" placeholder="Paste URL to picture here"></input></td></tr>
+			</table>
+		</div>
+		<div id="token-div">
+			Input Slack Token:<input type="password" id="token"></input> 
+			<button id="verify-token">Enter</button>
+			
+		</div>
+	</body>
+</html>
