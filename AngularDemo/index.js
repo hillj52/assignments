@@ -19,6 +19,13 @@ angular.module("AppMod", []).controller("AppCtrl", [function() {
 		}
 	}
 	
+	self.refresh = function() {
+		for(var std of self.students) {
+			std.show = true;
+		}
+		$("#sat-filter").val("");
+	}
+	
 	self.students = [
 		{"id":100,"firstname":"Eric","lastname":"Ephram","gpa":3.0,"sat":1200,"majorid":1,"show":true},
 		{"id":110,"firstname":"Greg","lastname":"Gould","gpa":2.5,"sat":1100,"majorid":null,"show":true},
@@ -32,8 +39,3 @@ angular.module("AppMod", []).controller("AppCtrl", [function() {
 		{"id":190,"firstname":"Brian","lastname":"Biggs","gpa":2.3,"sat":950,"majorid":null,"show":true}
 		];
 }]);
-$(document).ready(function() {
-	$("#refresh-table").click(function() {
-		location.reload(true);
-	});
-});

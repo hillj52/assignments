@@ -35,8 +35,8 @@
 			</table>
 		</div>
 		<div id="control-div">
-			<p><button id="refresh-table">Refresh</button></p>
-			<p><input type="text" placeholder="SAT > x" ng-model="sat"></input></p>
+			<p><button id="refresh-table" ng-click="ctrl.refresh();">Refresh</button></p>
+			<p><input id="sat-filter" type="text" placeholder="SAT > x" ng-model="sat"></input></p>
 			<p><button ng-click="ctrl.hideBySat(sat);">Filter</button></p>
 		</div>
 	</body>
