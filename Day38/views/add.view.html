@@ -1,0 +1,43 @@
+<div class="add-student-div">
+	<form name="addForm">
+		<table>
+			<tr>
+				<td>First Name: </td>
+				<td>
+					<input id="add-student-first-name" name="firstName" ng-model="firstName" type="text" pattern="[A-Z][a-zA-Z]*" required />
+					<span ng-show="addForm.firstName.$error.required && addForm.firstName.$pristine">*</span>
+					<span class="error" ng-show="addForm.firstName.$error.required && !addForm.firstName.$pristine">Required</span>
+					<span class="error" ng-show="addForm.firstName.$invalid && addForm.firstName.$error.pattern">Invalid Name</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name: </td>
+				<td>
+					<input id="add-student-last-name" name="lastName" ng-model="lastName" type="text" pattern="[A-Z][a-zA-Z]*" required />
+					<span class="error" ng-show="addForm.lastName.$error.required && !addForm.lastName.$pristine">Required</span>
+					<span class="error" ng-show="addForm.lastName.$invalid && addForm.lastName.$error.pattern">Invalid Name</span>
+					<span ng-show="addForm.lastName.$error.required && addForm.lastName.$pristine">*</span>
+				</td>
+			</tr>
+			<tr>
+				<td>SAT Score: </td>
+				<td>
+					<input id="add-student-sat" name="sat" ng-model="sat" type="text" pattern="(\d{0,4})?" />
+					<span class="error" ng-show="addForm.sat.$invalid && addForm.sat.$error.pattern">Invalid SAT</span>
+				</td>
+			</tr>
+			<tr>
+				<td>GPA: </td>
+				<td>
+					<input id="add-student-gpa" name="gpa" ng-model="gpa" type="text" pattern="[0-4](\.\d{1,2})?" required />
+					<span class="error" ng-show="addForm.gpa.$error.required && !addForm.gpa.$pristine">Required</span>
+					<span class="error" ng-show="addForm.gpa.$invalid && addForm.gpa.$error.pattern">Invalid GPA</span>
+					<span ng-show="addForm.gpa.$error.required && addForm.gpa.$pristine">*</span>
+				</td>
+			</tr>
+			<tr><td></td><td><p>* denotes a required field</p></td></tr>
+		</table>
+	</form>
+	<button id="add-return" class="btn btn-primary">Return</button>
+	<button id="add" ng-click="ctrl.add();" ng-disabled="addForm.$invalid" class="btn btn-primary">Add</button>
+</div>

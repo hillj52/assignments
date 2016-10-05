@@ -1,0 +1,38 @@
+<div class="edit-student-div">
+	<form name="editForm">
+		<table>
+			<tr>
+				<td>ID: </td>
+				<td>
+					<input id="student-id" type="text" readonly value="{{Ectrl.editRecord.id}}" required />
+				</td>
+			</tr>
+			<tr>
+				<td>First Name: </td>
+				<td>
+					<input id="student-first-name" type="text" value="{{Ectrl.editRecord.firstName}}" required />
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name: </td>
+				<td>
+					<input id="student-last-name" type="text" value="{{Ectrl.editRecord.lastName}}" required />
+				</td>
+			</tr>
+			<tr>
+				<td>SAT Score: </td>
+				<td>
+					<input id="student-sat" type="text" value="{{Ectrl.editRecord.sat}}" required />
+				</td>
+			</tr>
+			<tr>
+				<td>GPA: </td>
+				<td>
+					<input id="student-gpa" type="text" value="{{Ectrl.editRecord.gpa}}" required />
+				</td>
+			</tr>
+		</table>
+	</form>
+	<button id="edit-return">Return</button>
+	<button id="update" ng-click="ctrl.update();">Update</button>
+</div>

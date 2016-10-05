@@ -1,0 +1,37 @@
+<div>	
+	<div id="table-div">
+		<table class="table table-bordered">
+			<tr>
+				<th>ID</th>
+				<th>Full Name</th>
+				<th>GPA</th>
+				<th>SAT</th>
+				<th>Major ID</th>
+				<th>Actions</th>
+			</tr>
+			<tr ng-repeat="student in ctrl.students">
+				<td ng-show="student.show"><span ng-bind="student.id"></span></td>
+				<td ng-show="student.show"><span ng-bind='student.lastName + ", " +student.firstName'></span></td>
+				<td ng-show="student.show"><span ng-bind="student.gpa"></span></td>
+				<td ng-show="student.show"><span ng-bind="student.sat"></span></td>
+				<td ng-show="student.show"><span ng-bind="student.majorId"></span></td>
+				<td ng-show="student.show">
+					<button ng-attr-id="hide{{student.id}}" class="btn btn-primary" ng-click="student.show=false;">
+						<span class="glyphicon glyphicon-eye-close"></span>
+					</button>
+					<button ng-attr-id="edit{{student.id}}" class="btn btn-warning" ng-click="ctrl.goEdit(student.id);" >
+						<span class="glyphicon glyphicon-pencil"></span>
+					</button>
+					<button ng-attr-id="delete{{student.id}}" class="btn btn-danger" ng-click="ctrl.deleteId(student.id);">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="control-div">
+		<p><button id="refresh-table" ng-click="ctrl.refresh();">Refresh</button></p>
+		<p><input id="sat-filter" type="text" placeholder="SAT > x" ng-model="sat"></input></p>
+		<p><button ng-click="ctrl.hideBySat(sat);">Filter</button></p>
+	</div>
+</div>

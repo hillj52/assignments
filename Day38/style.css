@@ -1,0 +1,15 @@
+#table-div  {
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#control-div {
+	width: 39%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.error {
+	color: red;
+}
